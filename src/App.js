@@ -1,5 +1,5 @@
 import { Component } from "react";
-import "./App.css";
+import s from "./App.module.scss";
 import { FeedbackOptions } from "./components/FeedbackOptions/FeedbackOptions";
 import { Notification } from "./components/Notification/Notification";
 import { Section } from "./components/Section/Section";
@@ -30,7 +30,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className={s.App}>
         <Section text="Please leave feedback">
           <FeedbackOptions onClick={this.addGrade} />
         </Section>

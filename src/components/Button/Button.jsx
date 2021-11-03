@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import s from "./Button.module.scss";
 
 export function Button({ children, onClick, name }) {
@@ -7,3 +8,8 @@ export function Button({ children, onClick, name }) {
     </button>
   );
 }
+
+Button.propTypes = {
+  onClick: PropTypes.func,
+  name: PropTypes.string,
+};
