@@ -1,7 +1,9 @@
-export function Button({ text, action }) {
+import s from "./Button.module.scss";
+
+export function Button({ children, onClick, name }) {
   return (
-    <button className="btn" onClick={action}>
-      {text}
+    <button name={name} className={s.btn} onClick={onClick}>
+      {children}
     </button>
   );
 }
