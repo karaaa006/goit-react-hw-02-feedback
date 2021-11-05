@@ -8,7 +8,7 @@ export function Statistics({ good, neutral, bad, total, positivePercentage }) {
         <li className={s.statisticElem}>Good: {good}</li>
         <li className={s.statisticElem}>Neutral: {neutral}</li>
         <li className={s.statisticElem}>Bad: {bad}</li>
-        <li className={[s.statisticElem, s.statT]}>Total: {total}</li>
+        <li className={s.statisticElem}>Total: {total}</li>
       </ul>
       <p>Positive feedback: {positivePercentage || 0}%</p>
     </>
